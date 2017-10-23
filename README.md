@@ -1,2 +1,11 @@
 # wait-for-200
-wait-for-200 is a java application that will wait on the 200 http code of an URL. This is usefull to wait for the readiness/liveness of a microservice.
+Waits for an http 200.
+
+Usage :
+docker run runo/wait-for-200 "http://someurl" --timeout=30
+
+This command will issue http requests to the url "http://someurl" until an http 200 is received or 30s elapsed since the beginning of the command.
+The interval between each attempt is 100ms.
+
+The docker image is available on docker hub :
+https://hub.docker.com/r/runo/wait-for-200/
