@@ -1,0 +1,1 @@
+docker build -t runo/wait-for-200 --build-arg LIB_DIRECTORY=target/lib --build-arg PACKAGED_ARTIFACT_FILENAME=target/wait-for-200.jar -f docker/Dockerfile
