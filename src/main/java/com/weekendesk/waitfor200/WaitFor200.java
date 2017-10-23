@@ -23,6 +23,7 @@ public final class WaitFor200 {
 
         if (!parseArguments.parse(args)) {
             printHelp();
+            return;
         }
 
         String url = parseArguments.getUrl();

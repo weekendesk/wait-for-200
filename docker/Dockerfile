@@ -8,7 +8,7 @@ ADD ${PACKAGED_ARTIFACT_FILENAME} /app/app.jar
 
 WORKDIR /app
 
-ENTRYPOINT ["java", "-cp", "lib/*:app.jar", "com.weekendesk.waitforit.WaitForIt"]
+ENTRYPOINT ["java", "-cp", "lib/*:app.jar", "com.weekendesk.waitfor200.WaitFor200"]
 
 
 
